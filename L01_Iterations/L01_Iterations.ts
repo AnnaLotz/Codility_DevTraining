@@ -1,8 +1,34 @@
 namespace L01_Iterations {
 
-    solution(20);
+    solution(647);
 
     function solution(_n: number): number {
+
+        if (_n <= 0)
+            return 0;
+
+        let binary: number = parseInt(_n.toString(2));
+        console.log("number: " + _n);
+        console.log("binary: " + binary);
+        let regex: RegExp = new RegExp("((?<=1))0.*?((?=1))");
+        //regex.test(binary.toString());
+        //regex.exec(binary.toString());
+
+        let result: RegExpExecArray | null = regex.exec(binary.toString());
+        console.log(result);
+        if (result) {
+            //console.log(result.index);
+
+            console.log(result.entries);
+            console.log(result[0].length);
+        }
+
+        return 0;
+
+    }
+
+    /*
+    function solutionOLD(_n: number): number {
 
         if (_n <= 0)
             return 0;
@@ -47,4 +73,5 @@ namespace L01_Iterations {
 
         return 0;
     }
+    */
 }
