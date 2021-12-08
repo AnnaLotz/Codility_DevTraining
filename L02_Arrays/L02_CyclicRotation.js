@@ -1,23 +1,30 @@
 "use strict";
 var L02_CyclicRotation;
 (function (L02_CyclicRotation) {
-    let a = [3, 8, 9, 7, 6];
-    let k = 5;
-    console.log(a);
+    let a = [];
+    let k = 3;
     console.log(solution(a, k));
-    function solution(_a, _k) {
-        for (let i = 0; i < _k; i++) {
-            //take last element in a and put at start
-            let lastNumber = _a[_a.length - 1];
-            console.log(lastNumber);
-            _a.splice(_a.length - 1);
-            _a.unshift(lastNumber);
+    function solution(A, K) {
+        if (A.length <= 0)
+            return [];
+        let lastNumber;
+        for (let i = 0; i < K; i++) {
+            lastNumber = A[A.length - 1];
+            A.splice(A.length - 1);
+            A.unshift(lastNumber);
         }
-        return _a;
+        return A;
     }
-    function solution2(_a, _k) {
-        //        in der schleife ein array befüllen, das an den anfang gesetzt werden soll
-        return [];
-    }
+    //doesn't work right
+    // function solution2(A: number[], K: number): number[] {
+    //     if (A.length <= 0)
+    //         return [];
+    //     let lastNumbers: number[] = [];
+    //     for (let i: number = 0; i < K; i++) {
+    //         lastNumbers.unshift(A[A.length - 1]);
+    //         A.splice(A.length - 1);
+    //     }
+    //     return lastNumbers.concat(A);
+    //}
 })(L02_CyclicRotation || (L02_CyclicRotation = {}));
 //# sourceMappingURL=L02_CyclicRotation.js.map
