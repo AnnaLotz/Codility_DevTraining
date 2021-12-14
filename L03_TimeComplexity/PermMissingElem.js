@@ -6,7 +6,6 @@ var PermMissingElem;
     A[1] = 3;
     A[2] = 1;
     A[3] = 5;
-    A = [1];
     console.log(solution(A));
     function solution(A) {
         if (A.length == 0)

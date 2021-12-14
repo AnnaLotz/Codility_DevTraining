@@ -37,3 +37,14 @@ Time: 40 Minutes
 First-Try-score: 95% - 90% correctness, 100% Performance
 
 Final Solution: 100%
+
+
+---
+## L04 Counting Elements
+### PermCheck
+
+Time: 1 hour
+
+First-Try-score: 75 - 83% correctness, 66% Performance
+
+Final Solution: 100%
