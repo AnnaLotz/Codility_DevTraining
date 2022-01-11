@@ -41,6 +41,16 @@ Final Solution: 100%
 
 ---
 ## L04 Counting Elements
+
+### FrogRiverOne
+
+Time: 55 min
+
+First-Try-score: 54%
+
+Final Solution: - 
+
+
 ### PermCheck
 
 Time: 1 hour
