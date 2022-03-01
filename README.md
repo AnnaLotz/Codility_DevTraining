@@ -58,3 +58,10 @@ Time: 1 hour
 First-Try-score: 75 - 83% correctness, 66% Performance
 
 Final Solution: 100%
+
+
+### MissingInteger
+
+Time: 12 Minutes
+
+First-Try-Score: 100% - 100% correctness, 100% Performance
